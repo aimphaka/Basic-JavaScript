@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM Style</title>
+</head>
+<body>
+   <p>
+      <button class="spoil-button">สปอย</button>
+   </p>
+   <div class="message" style="display: none;">
+      ระวังนะ
+   </div>
+
+   <script>
+      let message = document.querySelector('.message');
+      let spoilButton = document.querySelector('.spoil-button');
+
+      spoilButton.addEventListener('click' , () =>{
+         //Show /Hide message
+         if(message.style.display === 'none'){
+            message.style.display = 'block';
+         }else{
+            message.style.display = 'none'
+         }
+      })
+   </script>
+</body>
+</html>

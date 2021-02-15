@@ -9,11 +9,13 @@
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
 <body>
-   <!-- DOM (Document Object model) -->
+   DOM (Document Object model)
    
    <span class="border border-dark"><p id="message-1" class="message">id="message-1" class="message"</p></span>
    <p id="message-2" class="message">id="message-2" class="message"</p>
    <p id="message-3" class="message">id="message-3" class="message"</p>
+   <br>
+   <p id="message-4" class="message">text-4</p>
 
    <script>
       let message = document.getElementById
@@ -36,6 +38,15 @@
       let messages = document.querySelectorAll
       ('#message-3');
       message.innerHTML = 'Test';
+
+
+      // DOM Style
+      let message = document.querySelectorAll
+      ('message');
+      message.style.color = 'red';
+      message.style.backgroundColor = 'black';
+      message.style.fontSize = '20px';
+
 
    </script>
 
