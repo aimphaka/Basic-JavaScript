@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DOM</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+   <!-- DOM (Document Object model) -->
+   
+   <span class="border border-dark"><p id="message-1" class="message">id="message-1" class="message"</p></span>
+   <p id="message-2" class="message">id="message-2" class="message"</p>
+   <p id="message-3" class="message">id="message-3" class="message"</p>
+
+   <script>
+      let message = document.getElementById
+      ('message-2');
+      message.innerHTML = 'Test';
+
+      let messages = document.getElementsByClassName
+      ('message');
+      
+      for(let i =0; i <messages.length; i++){
+         messages[i].innerHTML = 'ไม่ต้องห่วงฉัน';
+      }
+
+
+      //querySelectorAll มี foreach ใช้
+      let messages = document.querySelectorAll
+      ('.message');
+
+      //querySelector เลือกได้ แต่ถ้าใช้ Class จะได้แค่ตัวแรกตัวเดียวเท่านั้น
+      let messages = document.querySelectorAll
+      ('#message-3');
+      message.innerHTML = 'Test';
+
+   </script>
+
+</body>
+</html>
