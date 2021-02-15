@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Array</title>
+</head>
+<body>
+   
+   <script>
+      let fruits = ['Apple', 'Banana', 'Orenge'];
+      fruits[1] = 'Watermelon';
+      console.log(fruits[1]);
+
+      //unshift ใส่ข้อมูลเป็นตัวแรก 
+      //push ใส่ข้อมูลเป็นตัวท้าย
+      //shift เอาข้อมูลตัวแรกออก
+      //pop เอาข้อมูลตัวท้ายออก
+      fruits.push('Cherry');
+      console.log(fruits);
+
+      //splice(ตำแน่ง, จำนวนตัวที่จะลบ, ข้อมูลที่จะใส่เพิ่ม)
+      //เพิ่มข้อมูล
+      fruits.splice(1,0,'Pieapple');
+      console.log(fruits);
+
+      //ลบข้อมูล
+      fruits.splice(1,1);
+      console.log(fruits);
+
+      //นับจำนวน
+      console.log(fruits.length);
+   </script>
+</body>
+</html>
