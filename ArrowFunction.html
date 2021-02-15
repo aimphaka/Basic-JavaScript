@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Arrow Functions</title>
+</head>
+<body>
+
+   <button id="say-button">Click Here !!</button>
+
+   <script>
+      // Function ปกติ
+      function saySomething1(){
+         console.log('Test 1');
+      }
+      //Arrow Functions 
+      let saySomething2 = () => {
+         console.log('Test 2');
+      }
+
+      saySomething1();
+      saySomething2();
+
+
+      let sayButton = document.getElementById('say-button');
+
+      sayButton.addEventListener('click', () => {
+         console.log('Test 1');
+      });
+   </script>
+</body>
+</html>
